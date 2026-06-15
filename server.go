@@ -192,7 +192,7 @@ var defaultServerOptions = serverOptions{
 	maxSendMessageSize:    defaultServerMaxSendMessageSize,
 	connectionTimeout:     120 * time.Second,
 	writeBufferSize:       defaultWriteBufSize,
-	sharedWriteBuffer:     true,
+	sharedWriteBuffer:     false,
 	readBufferSize:        defaultReadBufSize,
 	bufferPool:            mem.DefaultBufferPool(),
 }

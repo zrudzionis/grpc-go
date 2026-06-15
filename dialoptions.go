@@ -707,7 +707,7 @@ func defaultDialOptions() dialOptions {
 		copts: transport.ConnectOptions{
 			ReadBufferSize:    defaultReadBufSize,
 			WriteBufferSize:   defaultWriteBufSize,
-			SharedWriteBuffer: true,
+			SharedWriteBuffer: false,
 			UserAgent:         grpcUA,
 			BufferPool:        mem.DefaultBufferPool(),
 		},
