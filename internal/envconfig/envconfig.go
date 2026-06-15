@@ -135,7 +135,7 @@ var (
 	// This environment variable serves as an escape hatch to disable the
 	// feature if unforeseen issues arise, and it will be removed in a future
 	// release.
-	EnableHTTPFramerReadBufferPooling = boolFromEnv("GRPC_GO_EXPERIMENTAL_HTTP_FRAMER_READ_BUFFER_POOLING", true)
+	EnableHTTPFramerReadBufferPooling = boolFromEnv("GRPC_GO_EXPERIMENTAL_HTTP_FRAMER_READ_BUFFER_POOLING", false)
 )
 
 func boolFromEnv(envVar string, def bool) bool {
